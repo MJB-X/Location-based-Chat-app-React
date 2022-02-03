@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: "0";
+}
+/* custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2f4056;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f4056;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* *********************** */
+.App {
+  background-color: black;
+  overflow-y: hidden;
+  width: "100vw";
+  height: "100vh";
+}
+
+.greenText {
+  color: rgb(255, 255, 255);
+}
+.greenText:hover {
+  color: black;
+}
+.Fprofile:hover {
+  background-color: #0089fd;
+}
+.message_form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: "100%";
+}
+.Flist {
+  overflow-y: scroll;
+}
+.scrollableFeed {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.scanning {
+  width: fit-content;
+  height: fit-content;
+  animation: Scanning 5s infinite;
+}
+@keyframes Scanning {
+  100% {
+    transform: rotate(360deg);
+  }
+}
